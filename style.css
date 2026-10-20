@@ -95,9 +95,14 @@ code { font-family: var(--mono); font-size: .75em; }
 .media.missing img { display: none; }
 .media.missing .ph-label { display: block; text-align: center; font-size: .72rem; color: var(--faint); padding: 8px; line-height: 1.4; }
 .media.missing .ph-label code { color: var(--accent); word-break: break-all; }
-.avatar { width: 96px; height: 96px; border-radius: 50%; border: 2px solid var(--border); }
+.avatar { width: 120px; height: 120px; border-radius: 50%; border: 2px solid var(--border); }
 .avatar.missing { border-style: solid; background: linear-gradient(135deg, var(--accent-bg), var(--ph)); }
 .avatar.missing .ph-label { font: 600 1.6rem/1 Inter, sans-serif; color: var(--accent); padding: 0; }
+
+/* images not added yet are hidden; drop the file in place and it shows up */
+.media.missing:not(.avatar) { display: none; }
+.project:has(.media.missing) { grid-template-columns: 1fr; }
+.award:has(.media.missing) { grid-template-columns: 1fr; }
 
 /* ---------- sections ---------- */
 .section { margin-bottom: 112px; scroll-margin-top: 88px; }

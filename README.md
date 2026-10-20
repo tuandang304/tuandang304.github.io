@@ -13,12 +13,12 @@ assets/img/         ảnh minh chứng, ảnh dự án, ảnh đại diện
 
 ## Thêm ảnh
 
-Chỉ cần chép ảnh vào đúng đường dẫn dưới đây, không phải sửa HTML. Khi chưa có ảnh, trang hiện một khung nét đứt ghi sẵn đường dẫn cần đặt file.
+Chỉ cần chép ảnh vào đúng đường dẫn dưới đây, không phải sửa HTML. Khi chưa có ảnh, ô ảnh đó tự ẩn đi; chép file vào là ảnh tự hiện.
 
 | Ảnh | Đường dẫn | Trạng thái |
 |---|---|---|
-| Ảnh chân dung | `assets/img/profile/avatar.jpg` | chưa có (vuông, ~600×600) |
-| Ảnh xem trước khi chia sẻ link | `assets/img/profile/og-cover.jpg` | chưa có (1200×630) |
+| Ảnh chân dung | `assets/img/profile/avatar.jpg` | đã có (cắt từ aws_avatar.jpg) |
+| Ảnh xem trước khi chia sẻ link | `assets/img/profile/og-cover.jpg` | đã có |
 | Sơ đồ MD-GraphRAG | `assets/img/projects/md-graphrag.png` | chưa có (16:9) |
 | Ảnh chụp SlotHub | `assets/img/projects/slothub.png` | chưa có (16:9) |
 | Sơ đồ pipeline Jetson | `assets/img/projects/jetson-racer.jpg` | đã có |
