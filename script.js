@@ -39,7 +39,7 @@ filterBtns.forEach((btn) => btn.addEventListener("click", () => {
 // Lightbox for project, award and certificate images
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = lightbox.querySelector("img");
-document.querySelectorAll(".media:not(.avatar) img, .gallery img").forEach((img) => {
+document.querySelectorAll(".media:not(.avatar) img, .gallery img, .moments img").forEach((img) => {
   img.addEventListener("click", () => {
     if (img.parentElement.classList.contains("missing")) return;
     lightboxImg.src = img.src;

@@ -24,6 +24,8 @@ Chỉ cần chép ảnh vào đúng đường dẫn dưới đây, không phải
 | Sơ đồ pipeline Jetson | `assets/img/projects/jetson-racer.jpg` | đã có |
 | Thư chấp nhận EAI FISAT | `assets/img/awards/eai-fisat-acceptance.jpg` | chưa có |
 | 12 giấy chứng nhận (Jetson, Datathon, SEAL, Startup Challenge, AICCC, Swin, Data Storm) | `assets/img/certificates/` | đã có, lấy từ `2. CERTIFICATE` và nén còn ~1.5 MB |
+| Ảnh nhận giải Datathon, SEAL | `assets/img/awards/` | đã có |
+| Ảnh mục Moments | `assets/img/moments/` | đã có 8 ảnh; thêm ảnh mới bằng một dòng `<figure>` trong khối `class="moments"` |
 | 8 giấy khen cấp 3 và 4 chứng chỉ CodeLearn | `assets/img/highschool/` | đã có, cắt từ ảnh ghép trong `ẢNH CHỨNG MINH THÀNH TÍCH` |
 
 Thêm chứng nhận mới vào mục *Certificates*: chép ảnh vào `assets/img/certificates/` rồi thêm một dòng `<figure>` trong khối `class="gallery"` của `index.html`.
