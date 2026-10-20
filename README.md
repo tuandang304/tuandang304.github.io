@@ -21,7 +21,6 @@ Chỉ cần chép ảnh vào đúng đường dẫn dưới đây, không phải
 | Ảnh xem trước khi chia sẻ link | `assets/img/profile/og-cover.jpg` | đã có |
 | Sơ đồ MD-GraphRAG | `assets/img/projects/md-graphrag.png` | chưa có (16:9) |
 | Ảnh chụp SlotHub | `assets/img/projects/slothub.png` | chưa có (16:9) |
-| Sơ đồ pipeline Jetson | `assets/img/projects/jetson-racer.jpg` | đã có |
 | Thư chấp nhận EAI FISAT | `assets/img/awards/eai-fisat-acceptance.jpg` | chưa có |
 | 12 giấy chứng nhận (Jetson, Datathon, SEAL, Startup Challenge, AICCC, Swin, Data Storm) | `assets/img/certificates/` | đã có, lấy từ `2. CERTIFICATE` và nén còn ~1.5 MB |
 | Ảnh nhận giải Datathon, SEAL | `assets/img/awards/` | đã có |

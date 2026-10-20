@@ -101,7 +101,7 @@ code { font-family: var(--mono); font-size: .75em; }
 
 /* images not added yet are hidden; drop the file in place and it shows up */
 .media.missing:not(.avatar) { display: none; }
-.project:has(.media.missing) { grid-template-columns: 1fr; }
+.project:has(.media.missing), .project:not(:has(.media)) { grid-template-columns: 1fr; }
 .award:has(.media.missing) { grid-template-columns: 1fr; }
 
 /* ---------- sections ---------- */
