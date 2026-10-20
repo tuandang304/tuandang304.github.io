@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dang Thanh Tuan | AI Engineer</title>
+  <meta name="description" content="Dang Thanh Tuan, AI Engineer focused on LLM, RAG and AI agents. Projects, publications and awards.">
+  <meta property="og:title" content="Dang Thanh Tuan | AI Engineer">
+  <meta property="og:description" content="AI Engineer focused on LLM, RAG and AI agents.">
+  <meta property="og:image" content="assets/img/profile/og-cover.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // apply saved theme before paint (dark is the default)
+    try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <div class="spotlight" aria-hidden="true"></div>
+
+  <div class="layout">
+    <!-- ================= LEFT: sticky intro ================= -->
+    <header class="side">
+      <div>
+        <!-- PLACEHOLDER: put your portrait at assets/img/profile/avatar.jpg (square, ~600x600) -->
+        <figure class="media avatar">
+          <img src="assets/img/profile/avatar.jpg" alt="Portrait of Dang Thanh Tuan" onerror="this.parentElement.classList.add('missing')">
+          <figcaption class="ph-label">TT</figcaption>
+        </figure>
+        <h1><a href="#top">Đặng Thành Tuấn</a></h1>
+        <p class="role">AI Engineer · LLM · RAG · Agents</p>
+        <p class="tagline">I build retrieval-augmented generation systems, LLM chatbots and AI agents, from research prototype to production on AWS.</p>
+
+        <nav class="toc" aria-label="Sections">
+          <a href="#about"><span class="line"></span>About</a>
+          <a href="#projects"><span class="line"></span>Projects</a>
+          <a href="#publications"><span class="line"></span>Publications</a>
+          <a href="#awards"><span class="line"></span>Awards</a>
+          <a href="#certificates"><span class="line"></span>Certificates</a>
+          <a href="#skills"><span class="line"></span>Skills</a>
+        </nav>
+      </div>
+
+      <div class="side-foot">
+        <a class="btn primary" href="assets/cv/Dang_Thanh_Tuan_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+        <div class="socials">
+          <a href="https://github.com/tuandang304" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          </a>
+          <a href="mailto:dangthanhtuan30042005@gmail.com" aria-label="Email" title="Email">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" d="M3 5h18v14H3z M3 6l9 7 9-7"/></svg>
+          </a>
+          <a href="https://dl.acm.org/doi/10.1145/3719384.3719471" target="_blank" rel="noopener" aria-label="ACM publication" title="ACM Digital Library">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" d="M4 4h11l5 5v11H4z M15 4v5h5 M8 13h8 M8 17h6"/></svg>
+          </a>
+          <!-- TODO: add LinkedIn icon link -->
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle light / dark" title="Light / dark">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 100 18V3z"/><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= RIGHT: content ================= -->
+    <main id="top" class="content">
+
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <h2 class="section-label">About</h2>
+        <p>
+          I'm an <strong>Artificial Intelligence student at FPT University</strong> (GPA 3.6/4.0) who enjoys turning
+          LLM research into things people actually use. My recent work is on
+          <strong>GraphRAG for long documents</strong>, where I combine structure-aware chunking with knowledge-graph
+          retrieval, and on <strong>agentic chatbots</strong> built on Amazon Bedrock AgentCore.
+        </p>
+        <p>
+          I care about measuring before choosing: every pipeline I build is benchmarked with RAGAS and ablations.
+          Outside of LLMs, I've also shipped an autonomous driving stack on an NVIDIA Jetson Nano that won first place
+          at FPT University's Jetson AI Racer Challenge.
+        </p>
+
+        <div class="bento">
+          <div class="tile big">
+            <span class="num">2</span>
+            <span class="lbl">research papers<br><small>EAI FISAT 2026 · ACM AICCC 2024</small></span>
+          </div>
+          <div class="tile gold">
+            <span class="num">1st</span>
+            <span class="lbl">Jetson AI Racer 2026</span>
+          </div>
+          <div class="tile">
+            <span class="num">3rd</span>
+            <span class="lbl">Datathon VinUni 2026</span>
+          </div>
+          <div class="tile">
+            <span class="num">3.6</span>
+            <span class="lbl">GPA / 4.0</span>
+          </div>
+          <div class="tile">
+            <span class="num">7</span>
+            <span class="lbl">QA datasets benchmarked</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section">
+        <h2 class="section-label">Projects</h2>
+
+        <article class="card project">
+          <!-- PLACEHOLDER: architecture diagram or results chart -->
+          <figure class="media thumb">
+            <img src="assets/img/projects/md-graphrag.png" alt="MD-GraphRAG architecture" onerror="this.parentElement.classList.add('missing')">
+            <figcaption class="ph-label">Sơ đồ MD-GraphRAG<br><code>assets/img/projects/md-graphrag.png</code></figcaption>
+          </figure>
+          <div class="card-body">
+            <p class="meta">Feb – Jun 2026 · Research</p>
+            <h3><a href="https://github.com/tuandang304/graph-with-md" target="_blank" rel="noopener">MD-GraphRAG <span class="arrow">↗</span></a></h3>
+            <p class="badge-line"><span class="badge accent">Paper accepted · EAI FISAT 2026</span></p>
+            <p>Markdown-aware GraphRAG for long-document question answering. Structure-preserving chunking plus two-channel retrieval (vector search + knowledge-graph traversal), with KG triplets extracted by local Llama 3.1 and Qwen 2.5.</p>
+            <ul class="points">
+              <li>Benchmarked 4 pipeline variants on 7 QA datasets (HotpotQA, QASPER, PubMedQA…) with RAGAS.</li>
+              <li>Vector stores: ChromaDB, pgvector with BGE-M3 embeddings.</li>
+            </ul>
+            <ul class="chips"><li>Python</li><li>LangChain</li><li>ChromaDB</li><li>pgvector</li><li>NetworkX</li><li>Ollama</li><li>RAGAS</li></ul>
+          </div>
+        </article>
+
+        <article class="card project">
+          <!-- PLACEHOLDER: screenshot of the SlotHub chatbot / platform -->
+          <figure class="media thumb">
+            <img src="assets/img/projects/slothub.png" alt="SlotHub platform screenshot" onerror="this.parentElement.classList.add('missing')">
+            <figcaption class="ph-label">Ảnh SlotHub<br><code>assets/img/projects/slothub.png</code></figcaption>
+          </figure>
+          <div class="card-body">
+            <p class="meta">Jan – May 2026 · AWS First Cloud AI Journey</p>
+            <h3><a href="https://github.com/AWS-OJT-SPRING-2026" target="_blank" rel="noopener">SlotHub <span class="arrow">↗</span></a></h3>
+            <p class="badge-line"><span class="badge">AI Engineer · Team leader</span></p>
+            <p>AI-powered learning platform for teachers and students. I built the chatbot agent on <strong>Amazon Bedrock AgentCore</strong> that answers questions over course content, plus AI exercise generation by difficulty and personalized learning paths.</p>
+            <ul class="points">
+              <li>AI modules shipped as FastAPI services with PostgreSQL, deployed with Docker on AWS (EC2, S3, RDS).</li>
+            </ul>
+            <ul class="chips"><li>Bedrock AgentCore</li><li>LangChain</li><li>Hugging Face</li><li>FastAPI</li><li>PostgreSQL</li><li>Docker</li><li>AWS</li></ul>
+          </div>
+        </article>
+
+        <article class="card project">
+          <figure class="media thumb contain">
+            <img src="assets/img/projects/jetson-racer.jpg" alt="JetRacer perception, decision and control pipeline" onerror="this.parentElement.classList.add('missing')">
+            <figcaption class="ph-label">Ảnh xe Jetson<br><code>assets/img/projects/jetson-racer.jpg</code></figcaption>
+          </figure>
+          <div class="card-body">
+            <p class="meta">May – Aug 2026 · FPT University</p>
+            <h3>Jetson AI Racer</h3>
+            <p class="badge-line"><span class="badge gold">1st Prize 2026</span></p>
+            <p>Full perception, planning and control stack on a 4 GB Jetson Nano with TensorRT. A ResNet-18 lane regressor feeds a Kalman-filtered Stanley controller; a command-conditioned waypoint network with Pure Pursuit is switched by a state machine driven by a 6-class traffic-sign detector.</p>
+            <ul class="chips"><li>ROS</li><li>PyTorch</li><li>TensorRT</li><li>ResNet-18</li><li>Kalman filter</li><li>Pure Pursuit</li></ul>
+            <!-- TODO: add a repo or demo video link -->
+          </div>
+        </article>
+      </section>
+
+      <!-- PUBLICATIONS -->
+      <section id="publications" class="section">
+        <h2 class="section-label">Publications</h2>
+        <article class="card pub">
+          <p class="meta">2026 · EAI FISAT (Q4 journal) · Accepted</p>
+          <h3><a href="https://github.com/tuandang304/graph-with-md" target="_blank" rel="noopener">MD-GraphRAG: Synergizing Markdown-Aware Chunking and Knowledge Graph Enrichment for Retrieval-Augmented Generation <span class="arrow">↗</span></a></h3>
+        </article>
+        <article class="card pub">
+          <p class="meta">2024 · AICCC, Tokyo · ACM Digital Library</p>
+          <h3><a href="https://dl.acm.org/doi/10.1145/3719384.3719471" target="_blank" rel="noopener">Analysis of Connectivity Data in Shanghai Telecom Network for Service Optimization <span class="arrow">↗</span></a></h3>
+        </article>
+      </section>
+
+      <!-- AWARDS -->
+      <section id="awards" class="section">
+        <h2 class="section-label">Awards</h2>
+
+        <ol class="timeline">
+          <li class="card award">
+            <figure class="media mini contain">
+              <img src="assets/img/certificates/jetson-ai-racer-2026-cert.jpg" alt="Jetson AI Racer Challenge 2026 certificate" onerror="this.parentElement.classList.add('missing')">
+              <figcaption class="ph-label">ảnh</figcaption>
+            </figure>
+            <div class="card-body">
+              <p class="meta">2026 · FPT University</p>
+              <h3>Jetson AI Racer Challenge</h3>
+              <p class="badge-line"><span class="badge gold">1st Prize</span></p>
+            </div>
+          </li>
+          <li class="card award">
+            <figure class="media mini contain">
+              <img src="assets/img/certificates/datathon-vinuni-2026-top3.jpg" alt="Datathon 2026 The Gridbreakers 3rd prize board" onerror="this.parentElement.classList.add('missing')">
+              <figcaption class="ph-label">ảnh</figcaption>
+            </figure>
+            <div class="card-body">
+              <p class="meta">2026 · VinUni Data Science &amp; AI Club</p>
+              <h3>Datathon “The Gridbreakers”</h3>
+              <p class="badge-line"><span class="badge bronze">3rd Prize</span></p>
+            </div>
+          </li>
+          <li class="card award">
+            <figure class="media mini contain">
+              <img src="assets/img/certificates/seal-hackathon-2026-prize.jpg" alt="SEAL Hackathon Spring 2026 honorable mention" onerror="this.parentElement.classList.add('missing')">
+              <figcaption class="ph-label">ảnh</figcaption>
+            </figure>
+            <div class="card-body">
+              <p class="meta">2026 · FPT University · Team leader, SlotHub</p>
+              <h3>SEAL Hackathon Spring</h3>
+              <p class="badge-line"><span class="badge">Honorable Mention</span></p>
+            </div>
+          </li>
+          <li class="card award">
+            <figure class="media mini contain">
+              <img src="assets/img/certificates/startup-challenge-2026-top20.jpg" alt="Startup Challenge 2026 top 20 finalists certificate" onerror="this.parentElement.classList.add('missing')">
+              <figcaption class="ph-label">ảnh</figcaption>
+            </figure>
+            <div class="card-body">
+              <p class="meta">2026 · Team Five Evaluate</p>
+              <h3>Startup Challenge 2026</h3>
+              <p class="badge-line"><span class="badge accent">Top 20 Finalist</span></p>
+            </div>
+          </li>
+          <li class="card award">
+            <!-- PLACEHOLDER: EAI FISAT acceptance letter / email screenshot -->
+            <figure class="media mini contain">
+              <img src="assets/img/awards/eai-fisat-acceptance.jpg" alt="EAI FISAT acceptance letter" onerror="this.parentElement.classList.add('missing')">
+              <figcaption class="ph-label">ảnh<br><code>awards/eai-fisat-acceptance.jpg</code></figcaption>
+            </figure>
+            <div class="card-body">
+              <p class="meta">2026 · MD-GraphRAG</p>
+              <h3>EAI FISAT</h3>
+              <p class="badge-line"><span class="badge accent">Paper accepted</span></p>
+            </div>
+          </li>
+          <li class="card award">
+            <figure class="media mini contain">
+              <img src="assets/img/certificates/aiccc-2024-cert.jpg" alt="AICCC 2024 certificate of presentation" onerror="this.parentElement.classList.add('missing')">
+              <figcaption class="ph-label">ảnh</figcaption>
+            </figure>
+            <div class="card-body">
+              <p class="meta">Dec 2024 · Tokyo, Japan</p>
+              <h3>AICCC 2024 Conference</h3>
+              <p class="badge-line"><span class="badge accent">Presenter</span></p>
+            </div>
+          </li>
+          <li class="card award">
+            <figure class="media mini contain">
+              <img src="assets/img/highschool/tin-hoc-tre-quoc-gia-2022-giai-kk.jpg" alt="Vietnam Young Informatics Contest 2022 national consolation prize certificate" onerror="this.parentElement.classList.add('missing')">
+              <figcaption class="ph-label">ảnh</figcaption>
+            </figure>
+            <div class="card-body">
+              <p class="meta">2022 · 28th edition, category D3</p>
+              <h3>Vietnam Young Informatics Contest</h3>
+              <p class="badge-line"><span class="badge">National Consolation Prize</span></p>
+            </div>
+          </li>
+        </ol>
+
+        <details class="more">
+          <summary>More competitions &amp; high-school awards</summary>
+          <ul>
+            <li><b>Swin Hackathon 2026</b>, Swinburne Vietnam, team Five Evaluate (Dec 2025 – Mar 2026)</li>
+            <li><b>Vietnam Datathon – Data Storm 2025</b>, qualifying round 2</li>
+            <li><b>Outstanding result</b>, regional round, 28th Vietnam Young Informatics Contest, 2022</li>
+            <li><b>1st Prize</b>, high-school creative product, 21st Gia Lai Young Informatics Contest, 2022</li>
+            <li><b>1st Prize</b>, system software, Gia Lai Provincial Science &amp; Engineering Fair, 2021–2022</li>
+            <li><b>1st Prize</b> (team of 3), 10th Gia Lai Youth &amp; Children Creativity Contest, 2022</li>
+            <li><b>3rd Prize</b> (2021–2022) and <b>Consolation Prize</b> (2022–2023), school Informatics contest, Luong The Vinh High School</li>
+          </ul>
+        </details>
+      </section>
+
+      <!-- CERTIFICATES GALLERY -->
+      <section id="certificates" class="section">
+        <h2 class="section-label">Certificates</h2>
+        <div class="filters" role="tablist">
+          <button class="active" data-filter="all">All</button>
+          <button data-filter="uni">University</button>
+          <button data-filter="hs">High school</button>
+          <button data-filter="course">Courses</button>
+        </div>
+        <!-- Add more: copy the image into assets/img/... and add one <figure data-cat="uni|hs|course"> here -->
+        <div class="gallery">
+          <figure data-cat="uni"><img src="assets/img/certificates/jetson-ai-racer-2026-cert.jpg" alt="Jetson AI Racer Challenge 2026 certificate" loading="lazy"><figcaption>Jetson AI Racer 2026</figcaption></figure>
+          <figure data-cat="uni"><img src="assets/img/certificates/datathon-vinuni-2026-top3.jpg" alt="Datathon VinUni 2026 3rd prize" loading="lazy"><figcaption>Datathon VinUni · 3rd Prize</figcaption></figure>
+          <figure data-cat="uni"><img src="assets/img/certificates/datathon-vinuni-2026-top8.jpg" alt="Datathon VinUni 2026 top 8 finalists" loading="lazy"><figcaption>Datathon VinUni · Top 8 final</figcaption></figure>
+          <figure data-cat="uni"><img src="assets/img/certificates/seal-hackathon-2026-prize.jpg" alt="SEAL Hackathon 2026 prize" loading="lazy"><figcaption>SEAL Hackathon · Prize</figcaption></figure>
+          <figure data-cat="uni"><img src="assets/img/certificates/seal-hackathon-2026-cert.jpg" alt="SEAL Hackathon 2026 certificate" loading="lazy"><figcaption>SEAL Hackathon · Certificate</figcaption></figure>
+          <figure data-cat="uni"><img src="assets/img/certificates/seal-hackathon-2026-nametag.jpg" alt="SEAL Hackathon 2026 team leader name tag" loading="lazy"><figcaption>SEAL Hackathon · Team leader</figcaption></figure>
+          <figure data-cat="uni"><img src="assets/img/certificates/startup-challenge-2026-top20.jpg" alt="Startup Challenge 2026 top 20" loading="lazy"><figcaption>Startup Challenge 2026 · Top 20</figcaption></figure>
+          <figure data-cat="uni"><img src="assets/img/certificates/aiccc-2024-cert.jpg" alt="AICCC 2024 certificate" loading="lazy"><figcaption>AICCC 2024 · Certificate</figcaption></figure>
+          <figure data-cat="uni"><img src="assets/img/certificates/aiccc-2024-nametag.jpg" alt="AICCC 2024 name tag" loading="lazy"><figcaption>AICCC 2024 · Name tag</figcaption></figure>
+          <figure data-cat="uni"><img src="assets/img/certificates/swin-hackathon-2026-cert.jpg" alt="Swin Hackathon 2026 certificate" loading="lazy"><figcaption>Swin Hackathon 2026</figcaption></figure>
+          <figure data-cat="uni"><img src="assets/img/certificates/swin-hackathon-2026-team.jpg" alt="Swin Hackathon 2026 team certificate" loading="lazy"><figcaption>Swin Hackathon 2026 · Team</figcaption></figure>
+          <figure data-cat="uni"><img src="assets/img/certificates/datastorm-2025-round2.jpg" alt="Data Storm 2025 round 2 certificate" loading="lazy"><figcaption>Data Storm 2025 · Round 2</figcaption></figure>
+          <figure data-cat="hs"><img src="assets/img/highschool/tin-hoc-tre-quoc-gia-2022-giai-kk.jpg" alt="National Young Informatics Contest 2022 consolation prize" loading="lazy"><figcaption>Young Informatics · National</figcaption></figure>
+          <figure data-cat="hs"><img src="assets/img/highschool/tin-hoc-tre-vong-khu-vuc-2022.jpg" alt="Young Informatics Contest 2022 regional round certificate" loading="lazy"><figcaption>Young Informatics · Regional</figcaption></figure>
+          <figure data-cat="hs"><img src="assets/img/highschool/tin-hoc-tre-gia-lai-2022-giai-nhat.jpg" alt="Gia Lai Young Informatics Contest 2022 first prize" loading="lazy"><figcaption>Young Informatics Gia Lai · 1st</figcaption></figure>
+          <figure data-cat="hs"><img src="assets/img/highschool/khkt-gia-lai-2022-giai-nhat.jpg" alt="Gia Lai Science and Engineering Fair first prize" loading="lazy"><figcaption>Science &amp; Engineering Fair · 1st</figcaption></figure>
+          <figure data-cat="hs"><img src="assets/img/highschool/sang-tao-ttnnd-gia-lai-2022-giai-nhat-so-khcn.jpg" alt="Gia Lai Youth Creativity Contest first prize" loading="lazy"><figcaption>Youth Creativity · 1st</figcaption></figure>
+          <figure data-cat="hs"><img src="assets/img/highschool/sang-tao-ttnnd-gia-lai-2022-so-gddt.jpg" alt="Gia Lai Department of Education commendation, Youth Creativity Contest" loading="lazy"><figcaption>Youth Creativity · Dept. of Education</figcaption></figure>
+          <figure data-cat="hs"><img src="assets/img/highschool/hsg-truong-tin-hoc-2021-2022-giai-ba.jpg" alt="School Informatics contest 2021-2022 third prize" loading="lazy"><figcaption>School Informatics · 3rd</figcaption></figure>
+          <figure data-cat="hs"><img src="assets/img/highschool/hsg-truong-tin-hoc-2022-2023-giai-kk.jpg" alt="School Informatics contest 2022-2023 consolation prize" loading="lazy"><figcaption>School Informatics · Consolation</figcaption></figure>
+          <figure data-cat="course"><img src="assets/img/highschool/codelearn-advanced-cpp.jpg" alt="CodeLearn Advanced C++ certificate" loading="lazy"><figcaption>CodeLearn · Advanced C++</figcaption></figure>
+          <figure data-cat="course"><img src="assets/img/highschool/codelearn-cpp-stl.jpg" alt="CodeLearn C++ Standard Template Library certificate" loading="lazy"><figcaption>CodeLearn · C++ STL</figcaption></figure>
+          <figure data-cat="course"><img src="assets/img/highschool/codelearn-advanced-algorithms.jpg" alt="CodeLearn Advanced algorithms certificate" loading="lazy"><figcaption>CodeLearn · Advanced Algorithms</figcaption></figure>
+          <figure data-cat="course"><img src="assets/img/highschool/codelearn-python-fundamentals.jpg" alt="CodeLearn Python fundamentals certificate" loading="lazy"><figcaption>CodeLearn · Python</figcaption></figure>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="section">
+        <h2 class="section-label">Skills</h2>
+        <div class="skill-grid">
+          <div class="card skill">
+            <h3>RAG &amp; Retrieval</h3>
+            <p>Structure-aware chunking, embeddings, hybrid vector + knowledge-graph retrieval.</p>
+            <ul class="chips"><li>LangChain</li><li>ChromaDB</li><li>pgvector</li><li>BGE-M3</li><li>NetworkX</li></ul>
+          </div>
+          <div class="card skill">
+            <h3>LLM Apps &amp; Agents</h3>
+            <p>Chatbots and agents on managed platforms and self-hosted open models.</p>
+            <ul class="chips"><li>Bedrock AgentCore</li><li>Ollama</li><li>Llama</li><li>Qwen</li><li>Hugging Face</li></ul>
+          </div>
+          <div class="card skill">
+            <h3>Evaluation</h3>
+            <p>RAGAS and ablation studies to pick pipelines on evidence.</p>
+            <ul class="chips"><li>RAGAS</li><li>Ablation</li><li>HotpotQA</li><li>QASPER</li></ul>
+          </div>
+          <div class="card skill">
+            <h3>Deployment</h3>
+            <p>AI features as REST services, shipped to the cloud.</p>
+            <ul class="chips"><li>FastAPI</li><li>PostgreSQL</li><li>Docker</li><li>AWS EC2 · S3 · RDS</li></ul>
+          </div>
+          <div class="card skill">
+            <h3>ML Frameworks</h3>
+            <ul class="chips"><li>PyTorch</li><li>TensorFlow</li><li>Transformers</li><li>Scikit-learn</li><li>OpenCV</li><li>TensorRT</li></ul>
+          </div>
+          <div class="card skill">
+            <h3>Languages</h3>
+            <ul class="chips"><li>Python</li><li>SQL</li><li>C++</li><li>R</li></ul>
+            <p>English: working proficiency (IELTS 6.0 equivalent).</p>
+          </div>
+        </div>
+
+        <div class="card edu">
+          <div>
+            <p class="meta">2023 – 2027 (expected)</p>
+            <h3>FPT University, Ho Chi Minh City</h3>
+            <p>B.Sc. in Artificial Intelligence · GPA 3.6/4.0</p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>Open to AI Engineer roles building RAG, agent and automation features.
+          Reach me at <a href="mailto:dangthanhtuan30042005@gmail.com">dangthanhtuan30042005@gmail.com</a> · Thu Duc, Ho Chi Minh City.</p>
+        <p class="muted">© <span id="year">2026</span> Đặng Thành Tuấn · Built with plain HTML &amp; CSS.</p>
+      </footer>
+    </main>
+  </div>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <img alt="">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
